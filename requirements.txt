@@ -5,10 +5,6 @@ openai==1.14.2
 pandas==2.2.1
 streamlit==1.32.2
 torch==2.2.2+cu118
-torchaudio==2.2.2+cu118
-torchvision==0.17.2+cu118
 tqdm==4.66.2
-huggingface-hub
-pillow
 transformers
-requests
+IPython
