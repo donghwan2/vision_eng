@@ -8,8 +8,8 @@
 
 from openai import OpenAI
 from IPython.display import Image
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 client = OpenAI()
 # llm : langchain.ChatOpenAI
 from langchain.chat_models import ChatOpenAI
