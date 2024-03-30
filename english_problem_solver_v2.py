@@ -6,8 +6,16 @@
 # 기능2. 텍스트 입력하면 gpt-4-turbo가 답변
 
 import os
-import streamlit as st
+import base64
+import requests
+from IPython.display import Image
+from PIL import Image as Img
+import pandas as pd
+import numpy as np
+import time
+from datetime import datetime
 
+import streamlit as st
 import openai
 from openai import OpenAI
 # from dotenv import load_dotenv
@@ -15,29 +23,12 @@ from openai import OpenAI
 # openai.api_key = os.environ.get('OPENAI_API_KEY')
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
-
 client = OpenAI()
 
 import langchain
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import AIMessage, HumanMessage, SystemMessage
-
 from transformers import Pix2StructProcessor, Pix2StructForConditionalGeneration
-
-import os
-import base64
-import requests
-from IPython.display import Image
-from PIL import Image as Img
-
-import pandas as pd
-import numpy as np
-import time
-from datetime import datetime
-
-
-# https://velog.io/@wonjun12/Streamlit-%ED%8C%8C%EC%9D%BC-%EC%97%85%EB%A1%9C%EB%93%9C
-
 
 st.header("📄English Problem Solver📊")
 
