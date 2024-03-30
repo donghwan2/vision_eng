@@ -10,6 +10,7 @@ from openai import OpenAI
 from IPython.display import Image
 # from dotenv import load_dotenv
 # load_dotenv()
+openai.api_key = st.secrets["openai_api"]
 client = OpenAI()
 # llm : langchain.ChatOpenAI
 from langchain.chat_models import ChatOpenAI
